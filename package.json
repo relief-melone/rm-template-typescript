@@ -1,0 +1,32 @@
+{
+  "name": "rm-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "test": "./node_modules/.bin/nyc mocha",
+    "build": "./node_modules/.bin/tsc --watch false",
+    "lint": "./node_modules/.bin/eslint --ignore-path .gitignore .",
+    "tsc": "./node_modules/.bin/tsc"
+  },
+  "author": "Relief.Melone",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.5.0",
+    "@typescript-eslint/parser": "^2.5.0",
+    "@types/chai": "^4.2.4",
+    "@types/express": "^4.17.0",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.11.6",
+    "chai": "^4.2.0",
+    "chai-exclude": "^1.0.11",
+    "chai-files": "^1.4.0",
+    "eslint": "^6.5.1",
+    "mocha": "^5.2.0",
+    "nyc": "^14.1.1",
+    "typescript": "^3.6.4"
+  }
+}
