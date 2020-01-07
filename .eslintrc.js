@@ -1,6 +1,9 @@
 module.exports =  {
   parser:  '@typescript-eslint/parser',  // Specifies the ESLint parser
-  plugins: ['@typescript-eslint'],
+  plugins: [
+    '@typescript-eslint',
+    'import'   
+  ],
   extends:  [
     'plugin:@typescript-eslint/recommended',  // Uses the recommended rules from the @typescript-eslint/eslint-plugin
   ],
@@ -8,16 +11,27 @@ module.exports =  {
     ecmaVersion:  2018,  // Allows for the parsing of modern ECMAScript features
     sourceType:  'module',  // Allows for the use of imports
   },
-  rules:  {
-    'quotes': 'off',
+  rules:  {    
     '@typescript-eslint/quotes' : ['warn', 'single'],
     '@typescript-eslint/indent' : ['error', 2],
     '@typescript-eslint/no-use-before-define' : 'off',
     '@typescript-eslint/no-explicit-any' : 'off',
-    'semi' : 'off',
     '@typescript-eslint/semi': ['error'],
     '@typescript-eslint/no-empty-function': 'off',
+    'semi' : 'off',
+    'quotes': 'off',
     'object-property-newline' : 'error',
-    'object-curly-spacing':['warn', 'always']
+    'object-curly-spacing':['warn', 'always'],    
+    'import/no-unresolved': 2
+  },
+  settings: {
+    "import/resolver": {
+      alias : {
+        map: [
+          ["@","./src"]
+        ],
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
+      },
+    }
   },
 };
