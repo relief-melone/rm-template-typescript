@@ -20,7 +20,7 @@ module.exports =  {
     '@typescript-eslint/no-empty-function': 'off',
     'semi' : 'off',
     'quotes': 'off',
-    'object-property-newline' : 'error',
+    'object-property-newline' : ["error", { "allowAllPropertiesOnSameLine": true }],
     'object-curly-spacing':['warn', 'always'],    
     'import/no-unresolved': 2
   },
