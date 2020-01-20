@@ -20,7 +20,7 @@ module.exports =  {
     '@typescript-eslint/no-empty-function': 'off',
     'semi' : 'off',
     'quotes': 'off',
-    'object-property-newline' : 'error',
+    'object-property-newline' : ["error", { "allowAllPropertiesOnSameLine": true }],
     'object-curly-spacing':['warn', 'always'],    
     'import/no-unresolved': 2
   },
@@ -28,7 +28,9 @@ module.exports =  {
     "import/resolver": {
       alias : {
         map: [
-          ["@","./src"]
+          ["@","./src"],
+          ["@root", "./"],
+          ["@test", "./test"]
         ],
         extensions: [".js", ".jsx", ".ts", ".tsx"],
       },

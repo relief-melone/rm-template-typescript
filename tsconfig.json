@@ -13,11 +13,15 @@
     "lib" : [
       "es2019"
     ],
+    "typeRoots": [
+      "src/types",
+      "node_modules/@types"
+    ],
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["src/*"],
+      "@root/*": ["./*"],
+      "@test/*": ["test/*"]
     },
   },  
   "exclude" : [
