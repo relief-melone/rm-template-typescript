@@ -11,9 +11,9 @@
     "tsc": "./node_modules/.bin/tsc"
   },
   "_moduleAliases" : {
-    "@" : "./src",
-    "@root" : ".",
-    "@classes" : "src/classes"
+    "@" : "./dist/src",
+    "@test" : "./disttest",
+    "@root" : "./dist"
   },
   "author": "Relief.Melone",
   "license": "MIT",
