@@ -6,3 +6,4 @@ echo $DIR
 
 $DIR/createFolders.sh
 $DIR/setRemoteUrl.sh
+$DIR/setPackageJson.sh
