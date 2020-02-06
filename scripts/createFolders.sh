@@ -7,3 +7,5 @@ mkdir -p ./src/routes
 mkdir -p ./src/schemas
 mkdir -p ./src/services
 mkdir -p ./src/types
+
+mkdir -p ./test

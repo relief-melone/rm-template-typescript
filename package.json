@@ -5,15 +5,16 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./dist/index.js",
-    "test": "./node_modules/.bin/nyc mocha",
-    "build": "./node_modules/.bin/tsc --watch false",
+    "test": "./node_modules/.bin/mocha",
+    "coverage": "./node_modules/.bin/nyc npm run test",
+    "build": "./node_modules/.bin/tsc --watch false -d",
     "lint": "./node_modules/.bin/eslint --ignore-path .gitignore .",
     "tsc": "./node_modules/.bin/tsc"
   },
-  "_moduleAliases" : {
-    "@" : "./dist/src",
-    "@test" : "./disttest",
-    "@root" : "./dist"
+  "_moduleAliases": {
+    "@": "./dist/src",
+    "@test": "./disttest",
+    "@root": "./dist"
   },
   "author": "Relief.Melone",
   "license": "MIT",
