@@ -1,0 +1,2 @@
+spec: dist/test/**/*.spec.js
+color: true
