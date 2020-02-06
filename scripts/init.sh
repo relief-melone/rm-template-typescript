@@ -1,7 +1,8 @@
 #!/bin/sh
 
-DIRNAME=`dirname $0`
+DIR=`dirname $0`
 
-echo $DIRNAME
+echo $DIR
 
-$DIRNAME/createFolders.sh
+$DIR/createFolders.sh
+$DIR/setRemoteUrl.sh
