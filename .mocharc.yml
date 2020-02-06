@@ -1,4 +1,2 @@
 spec: dist/test/**/*.spec.js
-exit: true
 color: true
-timeout: 99999
