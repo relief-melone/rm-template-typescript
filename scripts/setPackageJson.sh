@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 read -p "Do you want to init your package.json (dependencies will remain untouched)? (Y/n)  " $INIT_NPM
 
