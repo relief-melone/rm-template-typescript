@@ -22,7 +22,8 @@ module.exports =  {
     'quotes': 'off',
     'object-property-newline' : ["error", { "allowAllPropertiesOnSameLine": true }],
     'object-curly-spacing':['warn', 'always'],    
-    'import/no-unresolved': 2
+    'import/no-unresolved': 2,
+    'keyword-spacing': ['warn', { before: true, after: true }]
   },
   settings: {
     "import/resolver": {
